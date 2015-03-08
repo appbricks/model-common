@@ -15,11 +15,11 @@ apply plugin: "cobertura"
 apply plugin: "eclipse"
 apply plugin: "idea"
 
-group = 'com.userf'
+group = 'org.appbricks'
 version =  "0.1.0-SNAPSHOT"
 
 jar {
-    baseName = "uf-model-common"
+    baseName = "ab-model-common"
 }
 
 repositories {
@@ -67,7 +67,7 @@ test {
         suiteXmlBuilder().suite(name: "gradle-testng-mockito-bootstrap", parallel: "tests") {
             test (name : "all-tests") {
                 packages {
-                    "package" (name: "com.userf.*")
+                    "package" (name: "org.appbricks.*")
                 }
             }
         }
