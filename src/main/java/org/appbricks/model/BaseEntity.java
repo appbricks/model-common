@@ -26,7 +26,7 @@ public abstract class BaseEntity
 
     @Override
     public String toString() {
-        return this.id;
+        return this.id != null ? this.id : "";
     }
 
     @Override
